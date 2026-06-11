@@ -1,106 +1,88 @@
-# React OLX Card
+# OLX Card Clone
 
-A simple OLX-inspired Card UI built with React and Vite to practice component-based development and understand how data flows through React applications using props. This project recreates the design of an OLX product listing card while focusing on React fundamentals and reusable component architecture.
+A responsive OLX-inspired product listing interface built using React and Vite. This project demonstrates the implementation of reusable React components, props-based data rendering, and modern UI development practices. The application displays mobile phone advertisements in a card-based layout similar to the OLX marketplace.
 
-## Live Demo
+## 🚀 Features
 
-Add your deployed URL here:
+* Reusable Card Component
+* Dynamic Data Rendering with Props
+* Responsive Flexbox Layout
+* Product Image Display
+* Price and Product Details
+* Location and Posting Time Information
+* Wishlist (Heart) Icon Integration
+* Clean and Modern User Interface
 
-https://muhammadikram23.github.io/react-olx-card/
+## 📸 Preview
 
----
+The application displays multiple OLX-style product cards containing:
 
-## Project Overview
+* Product Image
+* Product Price
+* Product Description
+* Seller Location
+* Posting Date
+* Favorite/Wishlist Icon
 
-This project replicates an OLX-style product card interface using React. The primary objective was to gain hands-on experience with creating reusable components and passing data through props to render dynamic UI elements.
+## 🛠️ Built With
 
-Rather than focusing solely on visual design, this project was developed as a learning exercise to strengthen my understanding of React's component-based architecture.
-
----
-
-## Learning Objectives
-
-Through this project, I practiced and reinforced my understanding of:
-
-* React Functional Components
-* Component Reusability
-* Passing Data with Props
-* JSX Syntax
-* Organizing Components
-* Building Structured User Interfaces
-* Git and GitHub Workflow
-* Deploying React Applications using GitHub Pages
-
----
-
-## Features
-
-* OLX-inspired product card design
-* Reusable React components
-* Dynamic rendering using props
-* Clean and organized code structure
-* Responsive card layout
-* Modern user interface
-
----
-
-## Technologies Used
-
-* React
+* React.js
 * Vite
 * JavaScript (ES6+)
 * CSS3
-* Git
-* GitHub
-* GitHub Actions
-* GitHub Pages
+* Font Awesome Icons
 
----
-
-## Project Structure
+## 📂 Project Structure
 
 ```text
-react-olx-card/
+olx-card/
+│
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+│
 ├── public/
+│
 ├── src/
 │   ├── assets/
-│   ├── components/
+│   ├── component/
+│   │   └── Card.jsx
+│   │
 │   ├── App.jsx
 │   ├── App.css
 │   ├── index.css
 │   └── main.jsx
+│
+├── .gitignore
+├── eslint.config.js
 ├── index.html
 ├── package.json
-├── vite.config.js
+├── package-lock.json
 ├── README.md
-└── .github/
-    └── workflows/
-        └── deploy.yml
+└── vite.config.js
 ```
 
----
+## ⚙️ Installation
 
-## Installation
-
-Clone the repository:
+### Clone the Repository
 
 ```bash
-git clone https://github.com/muhammadikram23/react-olx-card.git
+git clone https://github.com/your-username/olx-card.git
 ```
 
-Navigate to the project directory:
+### Navigate to the Project Directory
 
 ```bash
-cd react-olx-card
+cd olx-card
 ```
 
-Install dependencies:
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-Start the development server:
+### Run Development Server
 
 ```bash
 npm run dev
@@ -112,51 +94,49 @@ Open your browser and visit:
 http://localhost:5173
 ```
 
----
+## 💡 Component Usage
 
-## Build for Production
+The application uses a reusable Card component that receives data through props:
 
-```bash
-npm run build
+```jsx
+<Card
+  src="image-url"
+  price="RS 1.09 Lac"
+  title="iPhone 15 JV 128GB"
+  location="Faisalabad"
+  time="4 days ago"
+  icon={<i className="fa-regular fa-heart"></i>}
+/>
 ```
 
----
+## 🎯 Learning Objectives
 
-## What I Learned
+This project was developed to practice:
 
-This project helped me understand:
+* React Functional Components
+* Component Reusability
+* Props Handling
+* UI Replication
+* Responsive Layout Design
+* Modern Frontend Development with Vite
 
-* How React applications are divided into reusable components.
-* How to pass data from parent components to child components using props.
-* How component-based architecture improves code organization and maintainability.
-* How to structure a React project effectively.
-* How to use Git and GitHub for version control.
-* How to deploy React applications to GitHub Pages.
+## 🔮 Future Enhancements
 
----
+* Fetch listings from an API
+* Search Functionality
+* Product Filtering
+* Category Navigation
+* Responsive Mobile Design Improvements
+* Product Details Page
+* Favorite Items Feature
+* State Management Integration
 
-## Future Improvements
+## 👨‍💻 Author
 
-Potential enhancements for this project include:
+Muhammad Ikram
 
-* Rendering multiple product cards dynamically from an array of data.
-* Adding category badges.
-* Implementing a favorite (wishlist) feature.
-* Adding product detail pages using React Router.
-* Fetching product data from an external API.
-* Improving responsiveness for various screen sizes.
+Frontend Developer passionate about building modern and responsive web applications with React.
 
----
+## 📄 License
 
-## Author
-
-**Muhammad Ikram**
-
-GitHub:
-https://github.com/muhammadikram23
-
----
-
-## License
-
-This project is open-source and intended for educational and learning purposes.
+This project is open-source and available under the MIT License.
